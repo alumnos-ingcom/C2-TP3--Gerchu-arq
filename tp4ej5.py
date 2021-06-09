@@ -27,9 +27,12 @@ def signo(numero):
     if numero == 0: print(f'Numero:{numero} Neutro')
     elif numero < 0: print(f'Numero:{numero} Negativo')
     else: return print(f'Numero:{numero} Positivo')
- 
+    
+def prueba():
+     numero = ingreso_numero("Ingresar un numero entero:")
+     signo(numero)
+     
  ############ FUNCION PRINCIPAL ####################################
  
 if __name__ == "__main__":
-    numero = ingreso_numero("Ingresar un numero entero:")
-    signo(numero)
+   prueba()
