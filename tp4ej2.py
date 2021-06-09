@@ -16,8 +16,22 @@ from tp4ej5 import ingreso_numero  # uso la funcion ingreso_numero(mensaje) del 
  
 
 def suma_lenta(numero, otro_numero):
+    suma = numero
     for i in range(abs(otro_numero)):
+        if otro_numero < 0:
+            aux = bool(0)
+            suma = suma - 1
+            unos_neg = (i+1)*"-1"
+        else:
+            aux = bool(1)
+            suma = suma + 1
+            unos_pos = (i+1)*"+1"
+    if aux == bool(0) :        
+        print(f'{numero}'+ unos_neg)
+    else:
+        print(f'{numero}'+ unos_pos)
         
+    print(f'suma lenta : {suma}')
         
 def prueba():
     numero = ingreso_numero("Ingresar numero:")
