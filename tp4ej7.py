@@ -26,10 +26,12 @@ def division_lenta(dividendo, divisor):
                 dividendo = residuo
         print(f'El cociente es:{cociente} y el resto es:{residuo}')
 
- 
+def prueba():
+    dividendo = ingreso_numero("Ingresar dividendo:")
+    divisor = ingreso_numero("Ingresar divisor:")
+    division_lenta(dividendo, divisor)   
+
  ############ FUNCION PRINCIPAL ####################################
  
 if __name__ == "__main__":
-    dividendo = ingreso_numero("Ingresar dividendo:")
-    divisor = ingreso_numero("Ingresar divisor:")
-    division_lenta(dividendo, divisor)        
+    prueba()         

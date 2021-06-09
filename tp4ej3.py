@@ -24,23 +24,6 @@ def convertir_a_fahrenheit(centigrados):
     fahrenheit = 9.0/5.0 * centigrados +32
     print(f'{centigrados:.2f} grados Celsius son {fahrenheit:.2f} grados Fahrenheit')
 
-'''while True:
-    print('1.- Fahrenheit a Celsius')
-    print('2.- Celsius a Fahrenheit')
-
-    try:
-        opcion = int(input('Seleccione una opción: '))
-        if opcion == 1:
-            print(fahrenheit_celsius())
-        elif opcion == 2:
-            print(celsius_fahrenheit())
-        elif opcion == 3:
-            print('Hasta luego')
-        else:
-            raise ValueError
-    except ValueError:
-        print('Ingrese solo números.(1/2)')'''
-
 if __name__ == "__main__":
     fahrenheit = int(input('Ingrese la temperatura en grados Fahrenheit: '))
     centigrados = int(input('Ingrese la temperatura en grados Celsius: '))
