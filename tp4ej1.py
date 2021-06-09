@@ -6,7 +6,7 @@
 
 
 # Reemplazar por las funciones del ejercicio
-
+# No esta empezado, aun....
 
 def ingreso_entero(mensaje):
     """
