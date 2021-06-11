@@ -7,8 +7,7 @@
 
 # Reemplazar por las funciones del ejercicio
 # No esta empezado, aun....
-
-def ingreso_entero(mensaje):
+def ingreso_numero(mensaje):
     """
     Esta funcion muestra un mensaje y agrega la # para indicar el ingreso
     de un número entero.
@@ -16,11 +15,26 @@ def ingreso_entero(mensaje):
     ingreso = input(mensaje + " #")
     try:
         entero = int(ingreso)
+    except Exception as ex:
+# Ha habido una excepción <class 'TypeError'>
+        print("Ha habido una excepción", type(ex))
+    else:  #Entra en else, no ha ocurrido ninguna excepción
+        print("No ha ocurrido ninguna excepción")
+        return entero
+'''
+    try:
+        entero = int(ingreso)
     except ValueError as err:
         raise IngresoIncorrecto("No era un número!") from err
     return entero
 
-
-
+'''
+def prueba():
+    print(f'numero entero:{ingreso_numero("Ingresar un numero entero:")}')
+     
+     
+ ############ FUNCION PRINCIPAL ####################################
+ 
 if __name__ == "__main__":
-    ingreso_entero("Ingresar un numero entero:")
+   prueba()
+
