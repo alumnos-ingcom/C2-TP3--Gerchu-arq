@@ -36,7 +36,7 @@ def suma_lenta(numero, otro_numero):
 def prueba():
     numero = ingreso_numero("Ingresar numero:")
     otro_numero = ingreso_numero("Ingresar otro numero:")
-     print(f'suma lenta : {suma_lenta(numero, otro_numero)}')  
+    print(f'suma lenta : {suma_lenta(numero, otro_numero)}')  
     
 
 if __name__ == "__main__":
