@@ -17,8 +17,11 @@ def es_primo(numero):
     print("Es primo")
     return True
 
+def prueba():
+     numero = ingreso_numero("Ingresar un numero:")
+     es_primo(numero)
 ############ FUNCION PRINCIPAL ####################################
  
 if __name__ == "__main__":
-    numero = ingreso_numero("Ingresar un numero:")
-    es_primo(numero)
+    prueba()
+   

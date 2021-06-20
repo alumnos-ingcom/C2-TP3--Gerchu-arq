@@ -9,26 +9,32 @@ Escribir las funciones para convertir la temperatura en grados centigrados en fa
 número real, utilice esta formula para calcular los grados centígrados y retorne el resultado
 obtenido. Y viceversa.'''
 
+from tp4ej5 import ingreso_numero 
 
-def convertir_a_centigrados(fahrenheit):
+def convertir_a_centigrados(_fahrenheit):
 
     '''convierte temperatura en grados fahrenheit a grados celsius'''
 
-    centigrados = (fahrenheit -32 ) * 5.0/9.0
-    print(f'{fahrenheit:.2f} grados Fahrenheit son {centigrados:.2f} grados Celsius')
+    _centigrados = (_fahrenheit -32 ) * 5.0/9.0
+  
+    return _centigrados
 
-def convertir_a_fahrenheit(centigrados):
+def convertir_a_fahrenheit(_centigrados):
 
     '''convierte temperatura en grados celsius a fahrenheit'''
 
-    fahrenheit = 9.0/5.0 * centigrados +32
-    print(f'{centigrados:.2f} grados Celsius son {fahrenheit:.2f} grados Fahrenheit')
+    _fahrenheit = 9.0/5.0 * _centigrados +32
+   
+    return _fahrenheit
 
+def prueba():
+    fahrenheit = ingreso_numero('Ingrese la temperatura en grados Fahrenheit: ')
+    centigrados = ingreso_numero('Ingrese la temperatura en grados Celsius: ')
+    print(f'{fahrenheit:.2f} grados Fahrenheit son {convertir_a_centigrados(fahrenheit):.2f} grados Celsius')
+    print(f'{centigrados:.2f} grados Celsius son {convertir_a_fahrenheit(centigrados):.2f} grados Fahrenheit')
+    
 if __name__ == "__main__":
-    fahrenheit = int(input('Ingrese la temperatura en grados Fahrenheit: '))
-    centigrados = int(input('Ingrese la temperatura en grados Celsius: '))
-    convertir_a_centigrados(fahrenheit)
-    convertir_a_fahrenheit(centigrados)
+    prueba()
     
     
 
