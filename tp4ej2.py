@@ -19,24 +19,24 @@ def suma_lenta(numero, otro_numero):
     suma = numero
     for i in range(abs(otro_numero)):
         if otro_numero < 0:
-            aux = bool(0)
+            aux = False
             suma = suma - 1
             unos_neg = (i+1)*"-1"
         else:
-            aux = bool(1)
+            aux = True
             suma = suma + 1
             unos_pos = (i+1)*"+1"
-    if aux == bool(0) :        
+    if aux == False :        
         print(f'{numero}'+ unos_neg)
     else:
         print(f'{numero}'+ unos_pos)
         
-    print(f'suma lenta : {suma}')
+    return suma  
         
 def prueba():
     numero = ingreso_numero("Ingresar numero:")
     otro_numero = ingreso_numero("Ingresar otro numero:")
-    suma_lenta(numero, otro_numero)   
+    print(f'suma lenta : {suma_lenta(numero, otro_numero) }')
 
 if __name__ == "__main__":
     prueba()

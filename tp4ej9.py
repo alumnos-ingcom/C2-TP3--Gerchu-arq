@@ -6,7 +6,7 @@
 
 #Escribir una función que indique con True si un numero indicado es Primo.
 
-from tp4ej5 import ingreso_numero  # uso la funcion ingreso_numero(mensaje) del ej. 5
+from tp4ej1 import ingreso_numero  
 
 def es_primo(numero):
     numero = abs(numero)

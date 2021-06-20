@@ -8,14 +8,15 @@
 '''Escribir una función que mediante restas sucesivas, obtenga el valor del cociente
 y resto de dos números enteros.'''
 
-from tp4ej5 import ingreso_numero  # uso la funcion ingreso_numero(mensaje) del ej. 5
+
+
+from tp4ej1 import ingreso_numero  
 
 
 def division_lenta(dividendo, divisor):
-    if (divisor == 0) : print("Error, division por cero \n")
-    elif (dividendo < divisor):
+    lista = []
+    if (dividendo < divisor):
         cociente = 0; residuo = 0;
-        print(f'El cociente es:{cociente} y el resto es:{residuo}')
     else:
         cociente = 0; residuo = 0
         while(residuo >= 0):
@@ -24,14 +25,26 @@ def division_lenta(dividendo, divisor):
                 residuo = dividendo - divisor
                 cociente = cociente + 1
                 dividendo = residuo
-        print(f'El cociente es:{cociente} y el resto es:{residuo}')
+    lista.append(cociente)
+    lista.append(residuo)
+    return lista
 
 def prueba():
     dividendo = ingreso_numero("Ingresar dividendo:")
-    divisor = ingreso_numero("Ingresar divisor:")
-    division_lenta(dividendo, divisor)   
-
+    try:
+        divisor = ingreso_numero("Ingresar divisor:")
+    except:
+        divisor = 0
+    if divisor == 0:
+        print("error en la division")
+        # sale del programa
+        exit()
+    else:
+        rta_division = division_lenta(dividendo, divisor)
+        print(f'\n El cociente y el resto es:')
+        return rta_division
+    
  ############ FUNCION PRINCIPAL ####################################
  
 if __name__ == "__main__":
-    prueba()         
+    print(prueba())         
