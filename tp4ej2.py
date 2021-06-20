@@ -30,23 +30,16 @@ def suma_lenta(numero, otro_numero):
         print(f'{numero}'+ unos_neg)
     else:
         print(f'{numero}'+ unos_pos)
-<<<<<<< HEAD
         
     return suma  
-=======
-      
-    return suma   
->>>>>>> aa34b32d13ff49ce81b8259186dd58fe4c39de13
+
         
 def prueba():
     numero = ingreso_numero("Ingresar numero:")
     otro_numero = ingreso_numero("Ingresar otro numero:")
-<<<<<<< HEAD
-    print(f'suma lenta : {suma_lenta(numero, otro_numero) }')
-=======
-    print(f'suma lenta : {suma_lenta(numero, otro_numero)}')  
     
->>>>>>> aa34b32d13ff49ce81b8259186dd58fe4c39de13
+    print(f'suma lenta : {suma_lenta(numero, otro_numero) }')
+
 
 if __name__ == "__main__":
     prueba()

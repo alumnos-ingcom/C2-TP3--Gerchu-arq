@@ -23,14 +23,4 @@ def prueba():
  
 if __name__ == "__main__":
     prueba()
-=======
-    
-def prueba():
-     numero = ingreso_numero("Ingresar un numero entero:")
-     signo(numero)
-     
- ############ FUNCION PRINCIPAL ####################################
- 
-if __name__ == "__main__":
-   prueba()
->>>>>>> aa34b32d13ff49ce81b8259186dd58fe4c39de13
+
