@@ -20,7 +20,7 @@ def es_primo(numero):
 def prueba():
      numero = ingreso_numero("Ingresar un numero:")
      es_primo(numero)
-############ FUNCION PRINCIPAL ####################################
+############  FUNCION PRINCIPAL ####################################
  
 if __name__ == "__main__":
     prueba()
